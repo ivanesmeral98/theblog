@@ -10,6 +10,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+
 @layer components {
   .sidebar-icon {
     @apply relative flex items-center justify-center

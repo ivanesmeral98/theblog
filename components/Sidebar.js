@@ -8,7 +8,7 @@ const Sidebar = () => {
                         text-white bg-gray-900 flex flex-col shadow-lg">
             <i><SidebarIcon icon={<AiOutlineHome/>} label="Home"/></i>
             <i><SidebarIcon icon={<RiQuillPenLine/>} label="Blog"/></i>
-            <i><SidebarIcon icon={<BsBook/>} label="Reads, Favorite Quotes"/></i>
+            <i><SidebarIcon icon={<BsBook/>} label="Currently Reading"/></i>
 
               
         </div>
