@@ -3,20 +3,25 @@ import Link from "next/link";
 import Sidebar from "../components/Sidebar";
 import Value from "../public/Posts"
 import { AiOutlineArrowRight } from "react-icons/ai";
+import { getSortedPostsData } from '../lib/posts'
 
-const Blog = () => {
+const Blog = ({ allPostsData }) => {
     return (
+        
     <div className="flex flex-col justify-center">
+
         <Sidebar/>
-            {Value.map((post, index) => (
-                    <div key={index} className="text-gray-900 px-4 py-2 m-2">
+ 
+
+            {allPostsData.map(({id, date, title, description}) => (
+                    <div key={id} className="text-gray-900 px-4 py-2 m-2">
                         <center>
-                            <Link href={`/${post.url}`}>
+                     
                             <a className="block p-6 max-w-sm bg-gray-800 rounded-2xl border border-gray-700 shadow-md shadow-2xl">
                                 
-                                <h5 className="text-left mb-2 text-xl font-bold tracking-tight text-white hover:text-indigo-400">{post.title}</h5>
-                                <p className="text-left font-normal text-gray-400">{post.date}</p>
-                                <p className="text-left font-normal text-gray-300">{post.description}</p>   
+                                <h5 className="text-left mb-2 text-xl font-bold tracking-tight text-white hover:text-indigo-400">{title}</h5>
+                                <p className="text-left font-normal text-gray-400">{date}</p>
+                                <p className="text-left font-normal text-gray-300">{description}</p>   
 
                                 <br/>
 
@@ -24,12 +29,21 @@ const Blog = () => {
                                  Read more   <AiOutlineArrowRight/>
                                 </a>
                             </a>
-                            </Link>
+          
                         </center>
                     </div>
              ))}
     </div>
     );
 }
+
+export async function getStaticProps() {
+    const allPostsData = getSortedPostsData()
+    return {
+      props: {
+        allPostsData
+      }
+    }
+  }
 
 export default Blog;

@@ -4,9 +4,11 @@ import styles from '../styles/Home.module.css'
 import Sidebar from '../components/Sidebar'
 import Link from 'next/link'
 import { useContext } from 'react'
+
+
 export default function Home() {
-  
-  const theme = 'dark';
+
+
 
   return (
     <div className="bg-white min-h-screen">
