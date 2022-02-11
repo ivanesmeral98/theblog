@@ -1,9 +1,11 @@
 import htmr from 'htmr';
+import Sidebar from '../../components/Sidebar'
+
 const Teaching = () => {
   
-  const post =
+const post =
 `
-  <html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>An attempt to make a difference through empathy-based teaching</title><style>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>An attempt to make a difference through empathy-based teaching</title><style>
 /* cspell:disable-file */
 /* webkit printing magic: print all background colors */
 html {
@@ -659,13 +661,13 @@ blockquote {
 	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
 }
 	
-</style></head><body><article id="0758e0d7-1330-45b3-b993-2ca885c2c5d8" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">⛱️</span></div><h1 class="page-title">An attempt to make a difference through empathy-based teaching</h1></header><div class="page-body"><p id="13a1187e-cb7f-4e15-a6dc-f131c41e5ad1" class="">Written by: Ivan Esmeral</p><p id="f4d02664-6b43-4f1b-a335-0c237e9ae560" class="">
+</style></head><body><article id="0758e0d7-1330-45b3-b993-2ca885c2c5d8" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">📖</span></div><h1 class="page-title">An attempt to make a difference through empathy-based teaching</h1></header><div class="page-body"><p id="13a1187e-cb7f-4e15-a6dc-f131c41e5ad1" class="">Written by: Ivan Esmeral</p><p id="f4d02664-6b43-4f1b-a335-0c237e9ae560" class="">
 </p><p id="f16f29b5-2f01-43fd-8381-0084489394b0" class="">To expect an 18 year old to know what they want to do for the rest of their life is silly, albeit almost a universal requirement when entering the US Higher Education System. I believe that just because a teenager performed well on a standardized AP or IB Biology test does not necessarily mean they should be forced to make the decision to become a doctor in their first year of college—where if they do not start on any immediate track towards a meaningful career, they are “falling behind” their peers. </p><p id="7bbec31c-eb73-4e0a-9e21-72377fcd0179" class="">
 </p><p id="cabdf39b-2ee8-4268-9e41-d6a3ae74dc33" class="">I faced this dilemma when graduating high school, where I chose to study Systems Engineering at the University of Pennsylvania because of 18-year-old me’s very complex rationale. It went a little something like this :<div class="indented"><p id="fa43e1ca-00d9-4fe3-a832-140c886121fb" class="">
 </p><p id="ad8658a4-c8f7-41cb-b1e8-67da77610759" class="">1) Well I’m alright in math and science, but I really like writing and history...but who can make a career in that?</p><p id="7fc1b4a9-1b93-4ee5-80a6-6a413c5d82f1" class="">2) My friends who are smarter than me are choosing to be engineers</p><p id="90038fd7-540f-4021-9b0b-cbf0949f7b85" class="">3) I’ve heard engineers make a lot of money?</p><p id="907f5019-71cb-4dfc-8399-519db9fbd396" class="">4) My mom was an industrial engineer and I guess this seems like the closest fit?</p></div></p><p id="fa3f316a-7e8c-4a90-9943-8849e27d5773" class="">
 </p><p id="e204a26e-fae2-4192-ab0a-df4e3551a724" class="">As you can see, I had no idea what a Systems Engineer actually was or what type of work I would be condemning myself to for the rest of my life. Or so I thought.</p><p id="6d71f734-9b14-4fe6-9620-a5d1eaef8a0e" class="">
 </p><p id="7a5a8adb-34aa-4c47-a4b6-3d979241594b" class="">We’ve all heard of the butterfly effect, where a tiny butterfly flapping its wings in Colombia can cause a tornado across the world in Kansas. That is, some seemingly insignificant event occurs which may have an unexpected rippling effect on a larger scale. But what about the “Google Forms” effect?</p><p id="14a3e849-bb12-465a-a942-3252bfb70675" class="">
-</p><p id="c2d3565f-b261-4ee3-9d42-15d51c1a2ecd" class="">During the summer before starting college I received the following email:</p><figure id="374635ff-5c97-4fb6-a1fb-8a77be490901" class="image"><a href="An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Untitled.png"><img style="width:561px" src="An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Untitled.png"/></a></figure><p id="96ba4aef-7efd-4a4c-92db-f1f3f39ead72" class="">“...you are totally allowed to change your mind.” These were the most reassuring words I could hear at that moment.</p><p id="dd23bb9b-d55d-47a6-a5f0-3eee68b040dd" class="">
+</p><p id="c2d3565f-b261-4ee3-9d42-15d51c1a2ecd" class="">During the summer before starting college I received the following email:</p><figure id="374635ff-5c97-4fb6-a1fb-8a77be490901" class="image"><a href="An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Untitled.png"><img style="width:561px" src="../public/Untitled 1.png"/></a></figure><p id="96ba4aef-7efd-4a4c-92db-f1f3f39ead72" class="">“...you are totally allowed to change your mind.” These were the most reassuring words I could hear at that moment.</p><p id="dd23bb9b-d55d-47a6-a5f0-3eee68b040dd" class="">
 </p><p id="46ef1b85-ce2e-46bc-be8a-e0f97fa5bce6" class="">I thought, “Why not? I have no idea what Systems Engineers do so I have nothing to lose here, I like computers, and I’ve heard through the grapevine that computer science is the future.”</p><p id="737ab196-4840-401e-9520-5390387bf6a5" class="">
 </p><p id="60d7cfed-5f66-4fb8-b31d-8cfac67ed0df" class=""> I opened the form linked in the email and was amazed to see something as simple as the following:</p><p id="e05aa8bc-b07a-4da4-93e6-711b74998e6f" class="">
 </p><p id="8cd59030-a243-4a49-9bf1-aa93ba56ebf2" class="">
@@ -708,8 +710,152 @@ blockquote {
 </p></div></article></body></html>
 `
 
+const md =
+`
+# An attempt to make a difference through empathy-based teaching
+
+Written by: Ivan Esmeral
+
+To expect an 18 year old to know what they want to do for the rest of their life is silly, albeit almost a universal requirement when entering the US Higher Education System. I believe that just because a teenager performed well on a standardized AP or IB Biology test does not necessarily mean they should be forced to make the decision to become a doctor in their first year of college—where if they do not start on any immediate track towards a meaningful career, they are “falling behind” their peers. 
+
+I faced this dilemma when graduating high school, where I chose to study Systems Engineering at the University of Pennsylvania because of 18-year-old me’s very complex rationale. It went a little something like this :
+
+1) Well I’m alright in math and science, but I really like writing and history...but who can make a career in that?
+
+2) My friends who are smarter than me are choosing to be engineers
+
+3) I’ve heard engineers make a lot of money?
+
+4) My mom was an industrial engineer and I guess this seems like the closest fit?
+
+As you can see, I had no idea what a Systems Engineer actually was or what type of work I would be condemning myself to for the rest of my life. Or so I thought.
+
+We’ve all heard of the butterfly effect, where a tiny butterfly flapping its wings in Colombia can cause a tornado across the world in Kansas. That is, some seemingly insignificant event occurs which may have an unexpected rippling effect on a larger scale. But what about the “Google Forms” effect?
+
+During the summer before starting college I received the following email:
+
+![Untitled](An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Untitled.png)
+
+“...you are totally allowed to change your mind.” These were the most reassuring words I could hear at that moment.
+
+I thought, “Why not? I have no idea what Systems Engineers do so I have nothing to lose here, I like computers, and I’ve heard through the grapevine that computer science is the future.”
+
+ I opened the form linked in the email and was amazed to see something as simple as the following:
+
+![Screen Shot 2022-01-21 at 8.38.03 AM.png](An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Screen_Shot_2022-01-21_at_8.38.03_AM.png)
+
+I immediately thought: “Is it really this easy?” “Should I talk to my parents?”
+
+I avoided that last step and locked in my three answers with the confidence and innocent naivety that only an 18-year-old could possibly have:
+
+1. Ivan Esmeral Parra
+2. Systems Engineering
+3. Computer Science
+
+The rest is history. The “Google Forms” effect would take its course and clicking that submit button would change the direction of my career and ultimately, my young life.
+
+Having never actually taken a computer science course before I arrived on campus, I faced a harsh reality check and significant learning curve when I signed up for the intro course in Fall 2017. I stumbled my way through and felt overwhelmed from the knowledge I took away in those 5 months, or lack thereof.
+
+To quote Randy Pausch’s Last Lecture*,* 
+
+*"Experience is what you get when you didn't get what you wanted."* 
+
+While I didn’t do particularly well in the course, I was building towards a passion that I did not fully understand in the moment. As time went by and I took more classes in the space, my confidence grew and grew. Those foundational topics that initially made no sense to me started to slowly click through repetition, persistence, and my happy-go-lucky spirit.
+
+At the end of my first year, I felt comfortable enough with the material that I wanted to apply to become a teaching assistant for the intro course. The reasoning behind this was that I never wanted any student to feel as lost as I once did, where it seemed that any amount of effort could only take me so far. I applied for the TA position and began teaching students the next fall.
+
+Over the next 2.5 years and five semesters, I had the pleasure of teaching over 100 students and helped hundreds more in a weekly office-hours setting. Each of these students, whether for their major, for a requirement, or simply on a whim, had signed up to learn computer science with no prior background. Knowing this, I knew I had the responsibility of guiding these students and helping them find a place in the vast field of computer science as each of their journeys into the field started with me. During this time, I quickly learned **the importance of empathy when teaching new material.** For example, the introductory concept of the ‘For Loop’. 
+
+One of the most important topics in Intro to Computer Science is iteration, that is, the idea of repeating a set of tasks or instructions for a number of times until a condition is met. When introducing a concept like this, a typical diagram shown to students is as follows:
+
+![Untitled](An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Untitled%201.png)
+
+credit: [a4bea689-4e19-4e9d-bf71-433c13a2aa68_for_0.png (350×278) (study.com)](https://study.com/cimages/multimages/16/a4bea689-4e19-4e9d-bf71-433c13a2aa68_for_0.png)
+
+While this instantly clicks for some, this barebones and colorless logic does not click for everyone! When I first saw this in my large lecture hall as a freshman, I almost walked out of the room.
+
+In the diagram, we see that it’s as easy as:
+
+1) Some type of initialization?
+
+2) A checking of a condition
+
+3) then we have two possibilities:
+
+3a) If it is false then we end the process, 
+
+3b) If it is true then we execute our tasks...
+
+4) Oh and don’t forget we need to...increment or decrement? 
+
+Showing this graphic to someone with no prior programming or math background quickly leads to a room of puzzled faces and pure frustration. Students will often say: “I just don’t get it.” Or, “This is too hard, what’s even the point of this?” 
+
+So, instead of diving straight into the concept, I found that finding a real-world or relatable example helped encourage students in my classroom to see the bigger picture. For example, instead of showing an arcane diagram of the different parts of a loop, I introduced this concept by bringing students back to their childhood and showing a graphic of “The Simpsons”. The opening credits of every Simpsons episode shows Bart writing the same sentence over and over again on a chalkboard; the classic "write it 100 times and you can go home" punishment.
+
+![Untitled](An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Untitled%202.png)
+
+I would then explain that you can use loops to do any task however many times you like. Showing this graphic below (stressing not to worry about the syntax just yet!) to show how Bart can use a ‘For Loop’ and the concept of iteration to outsmart his teacher, finish his punishment in 2 lines instead of 100, and go home for the day.
+
+![Untitled](An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Untitled%203.png)
+
+After showing Bart fulfill his punishment, I would ask students if they could think of any other instances of repetition they see in the technology they use daily, often leading to examples like:
+
+- ATM Machines dispensing cash
+- Spotify and Apple Music playlists displaying songs
+- Facebook showing your list of friends
+- Anything, I mean *any* computing task that needs to be repeated more than once
+
+After getting the students to think deeply about real-world examples and why this concept matters, diving into the syntax became almost trivial. Ultimately, understanding the “Why” led to greater receptiveness and even a desire to eventually learning the “How”.
+
+During the 5 month intro course, I would often see students in my class go from being as lost as I was years earlier, to asking me how to switch their major and continue in the field of computer science. This blind trust that they put in me as their mentor led to some of the most rewarding interactions of my entire life. Not only was teaching these students extremely rewarding as they slowly mastered foundational concepts, it helped me reach a far deeper level of understanding that I had never had prior.
+
+After graduating from Penn, I stopped teaching for a few months until I realized that it was one of my favorite hobbies. I missed the joy of working with others and seeing these difficult concepts bring about spontaneous light-bulb moments.
+
+I decided to join Juni Learning (an E-Learning company for remote 1:1 instruction in Computer Science) as an instructor seeking fulfillment beyond his day job, now teaching two new students. The greatest difference from this experience and that of my time as a teaching assistant is the shift in student demographics. 
+
+Of the students I taught at Penn, some were freshmen, some were post-grads, and some were people industry experience seeking a career pivot. Meanwhile, my new students are 8 and 9 years old, respectively, and starting their computer science journey remotely, as a part of their elementary school education. 
+
+**These students are learning cursive at the same time as they learn Python(!!!).**
+
+Before starting with my new students, I thought I had mastered the art of teaching introductory computer science, that is, until I began teaching that same logic of “For Loops”. Not only had my students never even heard of “The Simpsons” making my examples dated and even more confusing, our lesson started like this:
+
+Me: “Last week we finished off with a teaser for our lesson today, an introduction to loops!”
+
+Them: “Huh?, what is a teaser?”
+
+Me: “Oh, it’s like a preview, or a sneak-peek! Let’s just look up the definition together.”
+
+The following image is what comes up on Google if you look up the word ‘teaser’:
+
+![Untitled](An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Untitled%204.png)
+
+Most notably: **“...a person who tempts someone sexually with no intention of satisfying the desire aroused.”** What began as an introduction to ‘For loops’ led to an 8 year old asking me what the words ‘Sexually’ and ‘Aroused’ meant and why I brought them up. Safe to say that I now always check what I ask my students to search on Google...  
+
+After a few lessons and understanding my audience more, I learned that in teaching, different things work for different people, yet, **the empathy used in teaching is truly the same no matter who is on the receiving end of the information.** Being an encouraging, positive light in difficult learning experiences can help make flowers grow from concrete. I truly believe that.
+
+The reality is that these younger students are learning concepts before their 10th birthday that I struggled with in my freshman year of college; the world is changing before our very eyes and the potential positive impact that these kids can have on our future will be immense—and I am proud to be a small part of their lifelong journey in learning. Empathy matters and it is crucial to take a step back and make sure its a part of our daily lives.
+
+Below are some tips from what I have learned through empathy-based teaching over the last 3 years:
+
+- Be kind! Kindness goes so far in forming relationships with students. If you are kind, your students will listen.
+- Fail fast! Learn how to think on the fly and do not get overwhelmed by initial signs of failure, i.e. accidently bringing up sex and arousal to a second-grader when you are supposed to be teaching loops.
+- Try to relate! Make connections to real life. Focus on the “Why”, the “How” will always follow suit.
+- Knock down any superiority complex and let your students know that you were once in their shoes and understand the difficulty of what they are going through.
+- Incorporate humor into every day life and your lessons. Laughing makes life better and learning come more easily. I love this tweet about making fun of your work:
+    
+    ![Untitled](An%20attempt%20to%20make%20a%20difference%20through%20empathy-ba%20374635ff5c974fb6a1fb8a77be490901/Untitled%205.png)
+    
+
+- Make it fun! Nothing that feels like a chore will ever ever resonate and stick, ever.
+
+If you’re struggling to find ways to teach, the easiest way to get started is to take time out of your day to teach your friends about your passions. Teaching is the easiest way to learn about a subject! Educator 3BlueOneBrown expressed it best, saying, “...you remember about 10% of what you read, you remember about 20% of what you listen to, you remember about 70% about what you actively interact with in some way, and about 90% about what you reach.”`;
+// Converting html to markdown
+const result = htmr(post)
     return (
-      htmr(post)
+		<div>
+			<Sidebar/>
+			{result}
+		</div>
     );
 }
 export default Teaching;
